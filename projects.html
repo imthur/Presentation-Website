@@ -1,3 +1,108 @@
-<a href="https://github.com/imthur?tab=repositories" target="_blank" rel="noopener noreferrer">
-    <p>Projects</p>
-</a>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Meta tags para configuração do documento -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | Arthur Aguiar</title>
+  
+  <!-- Links para estilos CSS e fontes -->
+  <link rel="stylesheet" href="index.css">
+  <!-- Fontes do Google: Poppins para o texto geral e Montserrat para títulos -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Container principal -->
+  <div class="container">
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <span><a href="index.html" style="text-decoration: none; color: inherit;">A</a></span>
+      </div>
+      
+      <!-- Links de navegação -->
+      <ul class="nav-links">
+        <li><a href="index.html">Sobre mim</a></li>
+        <li class="active"><a href="projects.html">Projetos</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+      
+      <!-- Menu hambúrguer para dispositivos móveis -->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+    
+    <!-- Conteúdo principal da página -->
+    <main>
+      <!-- Seção de Projetos -->
+      <section class="projects-section">
+        <div class="section-header">
+          <h3>Meus Projetos</h3>
+          <div class="accent-line"></div>
+        </div>
+        
+        <!-- Projeto 1 -->
+        <div class="card" style="margin-bottom: 20px;">
+          <h4>Projeto Lorem</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+        
+        <!-- Projeto 2 -->
+        <div class="card" style="margin-bottom: 20px;">
+          <h4>Projeto Ipsum</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+        
+        <!-- Projeto 3 -->
+        <div class="card">
+          <h4>Projeto Dolor</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+      </section>
+    </main>
+    
+    <!-- Rodapé com links para redes sociais -->
+    <footer>
+      <div class="social-links">
+        <!-- Link para GitHub -->
+        <a href="https://github.com/imthur" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+        
+        <!-- Link para LinkedIn -->
+        <a href="https://www.linkedin.com/in/arthuraguiar8708/" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        
+        <!-- Link para Instagram -->
+        <a href="https://www.instagram.com/imthur_/" target="_blank" rel="noopener noreferrer" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      
+      <!-- Informações de copyright -->
+      <p class="copyright">&copy; 2025 Arthur Aguiar. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- Script JavaScript para funcionalidade do menu mobile -->
+  <script>
+    // Seleciona os elementos do DOM
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    // Adiciona evento de clique ao botão hamburger
+    hamburger.addEventListener('click', () => {
+      // Alterna classes para mostrar/esconder o menu
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
